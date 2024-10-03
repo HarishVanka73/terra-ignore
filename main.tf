@@ -16,7 +16,7 @@ resource "aws_instance" "example" {
   ami           = each.value.ami
   #provider      = each.value.local.regional_providers.aws_region
   tags = {
-    Name = "virtual-${each.key}"
+    Name = "server-${each.key}"
   }
 
 }
