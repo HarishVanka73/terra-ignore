@@ -5,7 +5,7 @@ instances = {
   }
 
   "instance-pro-2" = {
-    instance_type = "t2.micro"
+    instance_type = "t2.nano"
     ami           = "ami-0866a3c8686eaeeba"
   }
 }
