@@ -1,9 +1,10 @@
-variable "ami" {
-  default = "ami-0ebfd941bbafe70c6"
 
+
+variable "instances" {
+  description = "instance type for instances"
+  type = map(object({
+    instance_type = string
+    ami           = string
+  }))
 }
 
-variable "instance_type" {
-  default = "t3.micro"
-
-}
